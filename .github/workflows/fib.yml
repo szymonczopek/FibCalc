@@ -53,8 +53,8 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/fibCalc
-            ghcr.io/${{ github.repository_owner }}/fibCalc
+            ${{ secrets.DOCKER_HUB_USERNAME }}/fibcalc
+            ghcr.io/${{ github.repository_owner }}/fibcalc
           # {{version}} = {{major}}.{{minor}}.{{patch}}
           tags: |
             type=ref,event=branch
